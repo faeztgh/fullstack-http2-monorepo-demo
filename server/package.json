@@ -1,0 +1,30 @@
+{
+    "name": "http2-server",
+    "version": "1.0.0",
+    "description": "HTTP/2 API server with Express",
+    "main": "dist/server.js",
+    "scripts": {
+        "start": "node dist/http2-server.js",
+        "dev": "nodemon --exec ts-node src/http2-server.ts",
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "generate-certs": "ts-node src/generate-certs.ts",
+        "postinstall": "npm run generate-certs && npm run build"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "nodemon": "^3.0.2",
+        "typescript": "^5.3.3",
+        "@types/node": "^20.10.5",
+        "ts-node": "^10.9.2"
+    },
+    "keywords": [
+        "http2",
+        "express",
+        "api",
+        "typescript"
+    ],
+    "author": "",
+    "license": "MIT"
+}
+

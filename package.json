@@ -1,0 +1,29 @@
+{
+    "name": "http2-demo",
+    "version": "1.0.0",
+    "description": "HTTP/2 Demo with TypeScript server and Next.js frontend",
+    "private": true,
+    "scripts": {
+        "install:all": "pnpm install",
+        "dev:server": "cd server && pnpm dev",
+        "dev:front": "cd front && pnpm dev",
+        "dev": "concurrently \"pnpm dev:server\" \"pnpm dev:front\"",
+        "build:server": "cd server && pnpm build",
+        "build:front": "cd front && pnpm build",
+        "build": "pnpm build:server && pnpm build:front",
+        "start:server": "cd server && pnpm start",
+        "start:front": "cd front && pnpm start",
+        "setup": "pnpm install && pnpm build:server"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "keywords": [
+        "http2",
+        "typescript",
+        "nextjs",
+        "express"
+    ],
+    "author": "",
+    "license": "MIT"
+}

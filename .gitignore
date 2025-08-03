@@ -1,0 +1,6 @@
+front/.next/build-manifest.json
+/front/.next
+/front/node_modules
+/node_modules
+/server/dist
+/server/node_modules
