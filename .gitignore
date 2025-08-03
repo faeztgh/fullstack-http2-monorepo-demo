@@ -4,3 +4,4 @@ front/.next/build-manifest.json
 /node_modules
 /server/dist
 /server/node_modules
+/server/certs
